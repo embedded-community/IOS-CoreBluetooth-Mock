@@ -90,6 +90,7 @@ public class CBMCentralManagerNative: CBMCentralManager {
             manager.delegate?.centralManager(manager,
                                              didDisconnectPeripheral: getPeripheral(peripheral),
                                              error: error)
+            manager.peripherals.removeValue(forKey: peripheral.identifier)
         }
         
         #if !os(macOS)
