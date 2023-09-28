@@ -87,10 +87,10 @@ public class CBMCentralManagerNative: CBMCentralManager {
         func centralManager(_ central: CBCentralManager,
                             didDisconnectPeripheral peripheral: CBPeripheral,
                             error: Error?) {
+            manager.peripherals.removeValue(forKey: peripheral.identifier)
             manager.delegate?.centralManager(manager,
                                              didDisconnectPeripheral: getPeripheral(peripheral),
                                              error: error)
-            manager.peripherals.removeValue(forKey: peripheral.identifier)
         }
         
         #if !os(macOS)
