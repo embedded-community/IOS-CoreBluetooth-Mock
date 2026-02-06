@@ -146,7 +146,7 @@ internal class CBMServiceNative: CBMService {
             }
         }
         
-        for characteristic in service.characteristics ?? [] {
+        for characteristic in safeCharacteristics(of: service) {
             if _characteristics == nil { _characteristics = [] }
             if let existing = (_characteristics as? [CBMCharacteristicNative])?.first(where: { $0.characteristic == characteristic }) {
                 existing.update(characteristic)
@@ -155,6 +155,19 @@ internal class CBMServiceNative: CBMService {
                 _characteristics!.append(newCharacteristic)
             }
         }
+    }
+    
+    /// There is a case when for some reason one of the item in characteristics array is CBService.
+    private func safeCharacteristics(of service: CBService) -> [CBCharacteristic] {
+        let characteristics: [CBCharacteristic]
+
+        if let rawArray = service.characteristics as NSArray? {
+            characteristics = rawArray.compactMap { $0 as? CBCharacteristic }
+        } else {
+            characteristics = []
+        }
+        
+        return characteristics
     }
     
     override func isEqual(_ object: Any?) -> Bool {
