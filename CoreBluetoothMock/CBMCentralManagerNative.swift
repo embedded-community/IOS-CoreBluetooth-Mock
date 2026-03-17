@@ -169,9 +169,8 @@ public class CBMCentralManagerNative: CBMCentralManager {
                             isReconnecting: Bool,
                             error: (any Error)?) {
             let p = getPeripheral(peripheral)
-            if !isReconnecting {
-                p.mockServices = nil
-            }
+            p.mockServices = nil
+            
             manager.delegate?.centralManager(manager,
                                              didDisconnectPeripheral: p,
                                              timestamp: timestamp,
