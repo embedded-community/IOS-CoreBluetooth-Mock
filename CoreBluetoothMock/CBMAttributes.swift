@@ -122,7 +122,8 @@ internal class CBMServiceNative: CBMService {
         self.peripheral = peripheral
         self.isPrimary = service.isPrimary
                 
-        if let nativeCharacteristics = service.characteristics {
+        let nativeCharacteristics = safeCharacteristics(of: service)
+        if !nativeCharacteristics.isEmpty {
             _characteristics = nativeCharacteristics.map { CBMCharacteristicNative($0, in: self) }
         }
         
