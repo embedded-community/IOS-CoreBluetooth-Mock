@@ -17,7 +17,7 @@ let package = Package(
     .library(name: "CoreBluetoothMock", targets: ["CoreBluetoothMock"])
   ],
   dependencies: [
-    .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.4.5")
+    .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.5.0")
   ],
   targets: [
     .target(
