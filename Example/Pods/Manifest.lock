@@ -1,5 +1,5 @@
 PODS:
-  - CoreBluetoothMock (1.0.4)
+  - CoreBluetoothMock (1.0.5)
 
 DEPENDENCIES:
   - CoreBluetoothMock (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CoreBluetoothMock: 2f56b01919edada7371945c2f88fd461634f1278
+  CoreBluetoothMock: 900bc999e40d6ec7775f7260a849ae8747026880
 
 PODFILE CHECKSUM: 0b65d3eb5c3b8364e0e8c102ccc0cee2258c07fb
 
