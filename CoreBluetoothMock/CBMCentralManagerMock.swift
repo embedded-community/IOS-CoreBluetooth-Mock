@@ -1057,7 +1057,7 @@ open class CBMCentralManagerMock: CBMCentralManager {
         }
         queue.asyncAfter(deadline: .now() + interval) { [weak self] in
             // `tearDownSimulation()` could have been called before this is called.
-            // See https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock/issues/25
+            // See https://github.com/nordicsemi/IOS-CoreBluetooth-Mock/issues/25
             if let self = self, self.state == .disconnecting,
                CBMCentralManagerMock.managerState == .poweredOn {
                 self.state = .disconnected

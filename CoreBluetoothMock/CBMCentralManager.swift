@@ -47,7 +47,7 @@ open class CBMCentralManager: NSObject {
     /// to ``CBMCentralManager``. This method does nothing.
     ///
     /// If you need to create your own implementation of central manager, call it. See also
-    /// [Issue #55](https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock/issues/55).
+    /// [Issue #55](https://github.com/nordicsemi/IOS-CoreBluetooth-Mock/issues/55).
     ///
     /// If you migrated to CoreBluetooth Mock and are getting an error with
     /// instantiating a ``CBMCentralManager`` instance, use
