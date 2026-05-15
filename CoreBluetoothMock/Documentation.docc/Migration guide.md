@@ -12,15 +12,15 @@ Those include initialization of ``CBMCentralManager`` and fixing possible issue 
 ### Adding dependency
 
 Add dependency to **CoreBluetoothMock** framework using one of the following:
-* [Swift Package Manager](https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock#swift-package-manager), 
-* [CocoaPods](https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock#cocoapods)
-* [Carthage](https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock#carthage).
+* [Swift Package Manager](https://github.com/nordicsemi/IOS-CoreBluetooth-Mock#swift-package-manager), 
+* [CocoaPods](https://github.com/nordicsemi/IOS-CoreBluetooth-Mock#cocoapods)
+* [Carthage](https://github.com/nordicsemi/IOS-CoreBluetooth-Mock#carthage).
 
 With this step complete, the migration can be done in one of 2 ways:
 
 #### Using aliases (recommended)
 
-1. Copy [`CoreBluetoothTypeAliases.swift`](https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock/blob/main/Example/nRFBlinky/CoreBluetoothTypeAliases.swift)
+1. Copy [`CoreBluetoothTypeAliases.swift`](https://github.com/nordicsemi/IOS-CoreBluetooth-Mock/blob/main/Example/nRFBlinky/CoreBluetoothTypeAliases.swift)
    file from the *Example app* to your project. 
    This file contains number of type aliases for all `CBM...` types and renames them to `CB...`,
    therefore removing the not need to perform any changes in your code.
@@ -76,4 +76,4 @@ comparing their identifiers.
 
 ## Migration Example
 
-Check out [Migration example](https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock-Example) application for step-by-step guide.
+Check out [Migration example](https://github.com/nordicsemi/IOS-CoreBluetooth-Mock-Example) application for step-by-step guide.

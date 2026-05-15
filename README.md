@@ -1,7 +1,7 @@
 # Core Bluetooth Mock
 
 ![Version number](https://img.shields.io/cocoapods/v/CoreBluetoothMock) 
-[![Platform](https://img.shields.io/cocoapods/p/CoreBluetoothMock.svg?style=flat)](https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock)
+[![Platform](https://img.shields.io/cocoapods/p/CoreBluetoothMock.svg?style=flat)](https://github.com/nordicsemi/IOS-CoreBluetooth-Mock)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM compatible](https://img.shields.io/badge/SPM-compatible-green?style=flat)](https://swift.org/package-manager)
 
@@ -71,7 +71,7 @@ The library support [CocoaPods](https://github.com/CocoaPods/CocoaPods), [Cartha
 - Create a new **Cartfile** in your project's root with the following contents
 
     ```
-    github "https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock" ~> x.y // Replace x.y with your required version
+    github "https://github.com/nordicsemi/IOS-CoreBluetooth-Mock" ~> x.y // Replace x.y with your required version
     ```
     
 - Build with carthage
@@ -86,14 +86,14 @@ The library support [CocoaPods](https://github.com/CocoaPods/CocoaPods), [Cartha
    <summary>Swift Package Manager</summary>
 
 - In Xcode: *File -> Swift Packages -> Add package dependency*, 
-type *https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock.git* and set required version, branch or commit.
+type *https://github.com/nordicsemi/IOS-CoreBluetooth-Mock.git* and set required version, branch or commit.
 
 - If you have *Swift.package* file, include the following dependency:
   ```swift
   dependencies: [
       // [...]
       .package(name: "CoreBluetoothMock", 
-               url: "https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock.git", 
+               url: "https://github.com/nordicsemi/IOS-CoreBluetooth-Mock.git", 
                .upToNextMajor(from: "x.y")) // Replace x.y with your required version
   ]
   ```
@@ -110,12 +110,12 @@ type *https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock.git* and set
 
 ## Documentation
 
-The documentation of the library is available [here](https://nordicsemiconductor.github.io/IOS-CoreBluetooth-Mock/documentation/corebluetoothmock).
+The documentation of the library is available [here](https://nordicsemi.github.io/IOS-CoreBluetooth-Mock/documentation/corebluetoothmock).
 
 ## Migration from *CoreBluetooth*
 
-Migration example is available [here](https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock-Example).
-See [Pull Request #1](https://github.com/NordicSemiconductor/IOS-CoreBluetooth-Mock-Example/pull/1) for 
+Migration example is available [here](https://github.com/nordicsemi/IOS-CoreBluetooth-Mock-Example).
+See [Pull Request #1](https://github.com/nordicsemi/IOS-CoreBluetooth-Mock-Example/pull/1) for 
 step-by-step guide.
 
 > [!Note]

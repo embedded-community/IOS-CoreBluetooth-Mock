@@ -414,7 +414,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1630;
+				LastUpgradeCheck = 2650;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					526EA539240D2F8100BF70B2 = {
@@ -917,6 +917,7 @@
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				RUN_DOCUMENTATION_COMPILER = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -970,6 +971,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				RUN_DOCUMENTATION_COMPILER = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
